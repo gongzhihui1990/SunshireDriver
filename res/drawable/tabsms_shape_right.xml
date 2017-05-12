@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomRightRadius="@dimen/dimens_10"
+        android:topRightRadius="@dimen/dimens_10" />
+    <solid android:color="@color/color_tabsms_bg" />
+    <stroke
+        android:width="@dimen/dimens_1"
+        android:color="@color/blue" />
+</shape>

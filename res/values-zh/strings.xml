@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--     <string name="app_name">SunshireDriver</string>
+        <string name="double_click_to_back">再按一次退出到后台</string>
+        <string name="tab_current">当前</string>
+        <string name="tab_history">历史</string>
+        <string name="tab_location">位置</string>
+        <string name="tab_contacts">我的</string>
+        <string name="back">返回</string>
+        <string name="ok">好的</string>
+        <string name="quit">退出?</string>
+        <string name="quit_off_duty">Off duty then quit?</string>
+        <string name="hint">提示</string>
+        <string name="cancel">取消</string>
+        <string name="close">关闭</string>
+        <string name="sure">确认</string> -->
+    <string name="sms_airport_title_1">去向接机地点</string>
+    <string name="sms_airport_title_2">接近接机地点</string>
+    <string name="sms_airport_title_3">乘客描述</string>
+    <string name="sms_airport_title_4">车辆信息</string>
+    <string name="sms_airport_title_5">交通拥堵</string>
+    <string name="sms_airport_title_6">到达接机地点</string>
+    <string name="sms_airport_title_7">错过接机地点</string>
+    <string name="sms_airport_title_8">乘客迟到</string>
+    <string name="sms_airport_title_9">停车场等待</string>
+    <string name="sms_airport_title_10">乘客状态</string>
+    <string name="sms_airport_title_11">默认回复</string>
+    <string name="sms_airport_title_12">LAX接机地点</string>
+    <string name="sms_airport_title_13">其他接机地点</string>
+
+
+</resources>

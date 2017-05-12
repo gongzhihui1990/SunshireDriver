@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tpHight">40dp</dimen>
+    <dimen name="padding_middle">8dp</dimen>
+    <dimen name="drawer_width">260dp</dimen>
+    <dimen name="scan_width">256dp</dimen>
+    <dimen name="scan_height">256dp</dimen>
+    <dimen name="window_width">220dp</dimen>
+    <dimen name="window_height">220dp</dimen>
+
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="middle_text_size">17sp</dimen>
+    <dimen name="big_text_size">20sp</dimen>
+    <dimen name="query_number">24sp</dimen>
+    <dimen name="payinput_number">48sp</dimen>
+    <dimen name="payinput_number_new">36sp</dimen>
+    <dimen name="key_number">30sp</dimen>
+
+    <dimen name="dimens_pad_padding">0dp</dimen>
+    <dimen name="dimens_pad_padding_middle">0dp</dimen>
+    <dimen name="dimens_mobile_top">20dp</dimen>
+    <dimen name="dimens_confirm">17sp</dimen>
+    <dimen name="button_high">50dp</dimen>
+
+    <dimen name="pad_page_margin">-72dp</dimen>
+    <dimen name="pad_page_margin_op">71dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

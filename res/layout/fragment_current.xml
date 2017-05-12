@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_support_toolbar" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dimens_32"
+        android:layout_weight="1.0"
+        android:divider="@color/grayline_e0e0e0"
+        android:dividerHeight="@dimen/dimens_1"></ListView>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+</LinearLayout>

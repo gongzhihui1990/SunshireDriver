@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context="com.sunshireshuttle.driver.activity.LoginActivity">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.sunshireshuttle.driver.widget.MainViewPager
+        android:id="@+id/main_pager_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        android:layout_gravity="center"
+        android:overScrollMode="never" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimens_1"
+        android:layout_above="@+id/main_pager_layout"
+        android:background="@color/grayline_e0e0e0"></View>
+
+    <LinearLayout
+        android:id="@+id/main_pager_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimens_120"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_dd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"></LinearLayout>
+
+</RelativeLayout>

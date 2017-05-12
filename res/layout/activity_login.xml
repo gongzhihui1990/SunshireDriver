@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_23BADE"
+    tools:context="com.sunshireshuttle.driver.activity.LoginActivity">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/common_input_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens_48"
+        android:layout_marginRight="@dimen/dimens_48"
+        android:layout_marginBottom="@dimen/dimens_32"
+        android:hint="name"
+        android:layout_above="@+id/et_pw"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_above="@+id/btn_login"
+        android:id="@+id/et_pw"
+        style="@style/common_input_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens_48"
+        android:layout_marginRight="@dimen/dimens_48"
+        android:layout_marginBottom="@dimen/dimens_32"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/common_button_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dimens_48"
+        android:layout_marginRight="@dimen/dimens_48"
+        android:layout_marginBottom="@dimen/dimens_369"
+        android:background="@null"
+        android:padding="@dimen/dimens_40"
+        android:text="Log On"
+        android:textColor="@drawable/color_text" />
+
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:padding="@dimen/dimens_10"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="italic" />
+
+</RelativeLayout>

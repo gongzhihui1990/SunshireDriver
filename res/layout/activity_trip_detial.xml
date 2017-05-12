@@ -1,0 +1,197 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_support_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/subtitle_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trip Detail" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order#" />
+
+                    <TextView
+                        android:id="@+id/tv_id"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/tv_pickup_time"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/subtitle_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Locations" />
+
+                <TextView
+                    style="@style/subcontent_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="From:" />
+
+                <TextView
+                    android:id="@+id/tv_location_from"
+                    style="@style/subcontent_min_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <TextView
+                    style="@style/subcontent_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To:" />
+
+                <TextView
+                    android:id="@+id/tv_location_to"
+                    style="@style/subcontent_min_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/subtitle_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total" />
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Receivable" />
+
+                    <TextView
+                        android:id="@+id/tv_receivable"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/subtitle_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Customer" />
+
+                <TextView
+                    style="@style/subcontent_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name" />
+
+                <TextView
+                    android:id="@+id/tv_customer_name"
+                    style="@style/subcontent_min_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SunshireDriver</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="double_click_to_back">Press again to back to main screen</string>
+    <string name="tab_current">Current</string>
+    <string name="tab_history">History</string>
+    <string name="tab_location">Location</string>
+    <string name="tab_contacts">Contacts</string>
+    <string name="tab_profile">Profile</string>
+    <string name="tab_earn">Earn</string>
+    <string name="back">Back</string>
+    <string name="ok">OK</string>
+    <string name="quit">Quit?</string>
+    <string name="quit_off_duty">Off duty then quit?</string>
+    <string name="hint">Hint</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="sure">Sure</string>
+    <string name="later_string_footer">. I will be there for several minutes. Please call or text
+        %1$s for further information.
+        We sincerely apologize for the inconvenience. Thank you for your cooperation.
+    </string>
+    <string name="confirmStr">Hi! Dear %1$s, this is %2$s with Sunshire Shuttles.
+        May I confirm your address with %3$s ?
+        You are more than welcome to either reply this message or call/text %4$s
+        for further information. We sincerely apologize for the inconvenience. Thank you for your
+        cooperation.
+    </string>
+    <string name="updateStr">Hi! Dear %1$s, this is %2$s with Sunshire Shuttles.
+        May I request an update of your location? We have a difficulty to find the exact location of
+        you.
+        You are more than welcome to either reply this message or call/text %3$s for further
+        information.
+        We sincerely apologize for the inconvenience. Thank you for your cooperation."
+    </string>
+    <string name="gateNumber">Hi! Dear %1$s, this is %2$s with Sunshire Shuttles.
+        I am honored to serve you today. Right now, I am at the gate of your community.
+        May I request your gate #? You are more than welcome to either reply this message or
+        call/text %3$s for further information.
+        We sincerely apologize for the inconvenience. Thank you for your cooperation.
+    </string>
+    <string name="waitingAlert">Hi! Dear %1$s, this is %2$s with Sunshire Shuttles.
+        I am honored to serve you today. Right now, I am at the gate of your house/apartment.
+        I am wondering if you need any help? I\'ve already waited you for 10 minutes. According to
+        the service condition,
+        the maximum wait time is 15 minutes. You may be charged extra money for the delay.
+        You are more than welcome to either reply this message or call/text %3$s for further
+        information.
+        We sincerely apologize for the inconvenience. Thank you for your cooperation.
+    </string>
+    <string name="sms_airport_title_1">On the way</string>
+    <string name="sms_airport_title_2">Approaching curb</string>
+    <string name="sms_airport_title_3">Customer description</string>
+    <string name="sms_airport_title_4">Vehicle info</string>
+    <string name="sms_airport_title_5">Heavy traffic</string>
+    <string name="sms_airport_title_6">Arrived curb</string>
+    <string name="sms_airport_title_7">Driver missed</string>
+    <string name="sms_airport_title_8">Customer delay</string>
+    <string name="sms_airport_title_9">Standby</string>
+    <string name="sms_airport_title_10">Customer status</string>
+    <string name="sms_airport_title_11">Driver response</string>
+    <string name="sms_airport_title_12">Meeting Pts LAX</string>
+    <string name="sms_airport_title_13">Meeting Pts Other</string>
+    <string name="title_activity_main2">MessagerActivity</string>
+
+
+</resources>

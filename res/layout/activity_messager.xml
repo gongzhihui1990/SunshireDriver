@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/cus_toolbar"
+            layout="@layout/layout_support_toolbar" />
+
+        <ListView
+            android:id="@+id/lv_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:hint="Input the message to send"
+                android:imeOptions="actionSend"
+                android:maxLength="1000"
+                android:maxLines="10" />
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimens_20"
+                android:text="Send"
+                android:textColor="@color/color_press_text"
+                android:textSize="@dimen/middle_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

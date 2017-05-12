@@ -1,0 +1,358 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_support_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/subtitle_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Overview" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flight ID:" />
+
+                    <TextView
+                        android:id="@+id/tv_fid"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flight #:" />
+
+                    <TextView
+                        android:id="@+id/tv_flight_no"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flight Stats:" />
+
+                    <TextView
+                        android:id="@+id/tv_flight_stats"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Update:" />
+
+                    <TextView
+                        android:id="@+id/tv_flight_last_update"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/subtitle_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Departrue Info" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Departrue Time:" />
+
+                    <TextView
+                        android:id="@+id/tv_flight_deptime"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Airport:" />
+
+                    <TextView
+                        android:id="@+id/tv_flight_airport"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terminal:" />
+
+                    <TextView
+                        android:id="@+id/tv_flight_terminal"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gate:" />
+
+                    <TextView
+                        android:id="@+id/tv_flight_gate"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/subtitle_style1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Arrival Info" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arrival Time:" />
+
+                    <TextView
+                        android:id="@+id/tv_flight_arrival_deptime"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Airport:" />
+
+                    <TextView
+                        android:id="@+id/tv_flight_arrival_airport"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terminal:" />
+
+                    <TextView
+                        android:id="@+id/tv_flight_arrival_terminal"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_1"
+                    android:layout_marginLeft="@dimen/dimens_20"
+                    android:background="@color/grayline_e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimens_112"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/subcontent_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gate:" />
+
+                    <TextView
+                        android:id="@+id/tv_flight_arrival_gate"
+                        style="@style/subcontent_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

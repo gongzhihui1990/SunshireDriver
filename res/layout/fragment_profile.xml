@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_support_toolbar" />
+
+    <TextView
+        style="@style/subtitle_style1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Driver ProFile" />
+
+    <TextView
+        style="@style/subcontent_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/subcontent_min_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimens_1"
+        android:layout_marginLeft="@dimen/dimens_20"
+        android:background="@color/grayline_e0e0e0" />
+
+    <TextView
+        style="@style/subcontent_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ID#:" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        style="@style/subcontent_min_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimens_1"
+        android:layout_marginLeft="@dimen/dimens_20"
+        android:background="@color/grayline_e0e0e0" />
+
+    <TextView
+        style="@style/subcontent_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone#:" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        style="@style/subcontent_min_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimens_1"
+        android:layout_marginLeft="@dimen/dimens_20"
+        android:background="@color/grayline_e0e0e0" />
+
+    <TextView
+        style="@style/subcontent_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Trip:" />
+
+    <TextView
+        android:id="@+id/tv_ctrip"
+        style="@style/subcontent_min_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimens_1"
+        android:layout_marginLeft="@dimen/dimens_20"
+        android:background="@color/grayline_e0e0e0" />
+
+    <LinearLayout
+        android:id="@+id/ll_loc"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/subcontent_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Location:" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/subcontent_min_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/subtitle_style1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Actions" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_red_xml"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dimens_32"
+        android:paddingLeft="@dimen/dimens_32"
+        android:paddingTop="@dimen/dimens_32"
+        android:text="Log Out"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/middle_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1.0"
+        android:gravity="center_horizontal|bottom"
+        android:padding="@dimen/dimens_20"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="italic" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+product sha1:	E9:CF:DC:F6:A2:AF:C5:C1:E0:04:DF:A7:E3:8F:1B:83:63:74:F1:91
+develop sha1: 	05:C4:F6:FD:47:5C:AC:80:E8:42:80:F6:37:A5:41:DF:26:9F:E0:50
+                40:79:38:E6:63:C8:7A:07:A9:B6:AB:3F:40:40:76:F9:D7:A7:14:CE
+package:		com.sunshireshuttle.driver
+1.0.0
+初始创建项目
+1.0.2
+功能完善
+1.0.3
+UI皮肤、背景、新增图标
+增加航班信息
+增加定位界面（google Map）
+定位服务使用Google Service
+1.0.4
+新增错误分析上传功能
+1.7.20161130D
+新增Earn

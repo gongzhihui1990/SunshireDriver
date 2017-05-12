@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/dimens_32"
+    android:layout_marginRight="@dimen/dimens_32"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:minWidth="300dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="Adding Gas Point"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/big_text_size"></TextView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"></View>
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:padding="@dimen/dimens_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are going add a gas point,are you sure?" />
+
+    <EditText
+        android:id="@+id/ed_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please confirm GAS cost like '9.99'"
+        android:includeFontPadding="false"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/dimens_40"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/small_text_size" />
+
+    <View
+        android:layout_marginTop="@dimen/dimens_20"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimens_1"
+        android:background="@color/grayline_e0e0e0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_1"
+            style="@style/dialog_button_style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_96"
+            android:layout_weight="1.0"
+            android:text="@string/close"
+            android:textColor="@color/gray" />
+
+        <View
+            android:id="@+id/verticial_divider1"
+            android:layout_width="@dimen/dimens_1"
+            android:layout_height="match_parent"
+            android:background="@color/grayline_e0e0e0" />
+
+        <Button
+            android:id="@+id/btn_2"
+            style="@style/dialog_button_style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_96"
+            android:layout_weight="1.0"
+            android:text="@string/ok"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white_bg" />
+
+</LinearLayout>

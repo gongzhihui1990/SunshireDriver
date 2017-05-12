@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cus_toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/action_bar_size"
+    android:background="@color/white_dd">
+
+    <!-- ?attr/colorPrimary -->
+
+    <LinearLayout
+        android:id="@+id/ll_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableLeft="@drawable/common_go"
+            android:drawablePadding="@dimen/dimens_10"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimens_32"
+            android:paddingRight="@dimen/dimens_32"
+            android:singleLine="true"
+            android:text="@string/back"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/middle_text_size" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbar_centerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/middle_text_size"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/reflash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/dimens_20"
+            android:src="@drawable/reflash_xml"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/dimens_20"
+            android:text="Send"
+            android:textColor="@color/green"
+            android:textSize="@dimen/middle_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimens_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grayline_e0e0e0">
+
+    </View>
+</RelativeLayout>

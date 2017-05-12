@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/layout_support_toolbar" />
+
+    <ListView
+        android:layout_below="@+id/cus_toolbar"
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dimens_32"
+        android:layout_weight="1.0"
+        android:divider="@color/grayline_e0e0e0"
+        android:dividerHeight="@dimen/dimens_1"></ListView>
+</RelativeLayout>

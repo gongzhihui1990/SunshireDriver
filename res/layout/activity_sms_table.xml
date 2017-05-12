@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/cus_toolbar"
+        layout="@layout/layout_support_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cus_toolbar"
+        android:layout_marginBottom="@dimen/dimens_20"
+        android:layout_marginLeft="@dimen/dimens_20"
+        android:layout_marginRight="@dimen/dimens_20"
+        android:layout_marginTop="@dimen/dimens_20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/tabsms_shape_left"
+            android:gravity="center"
+            android:padding="@dimen/dimens_10"
+            android:text="Late Arrival"
+            android:textColor="@color/color_tabsms_text" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/blue">
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimens_1"
+                android:layout_marginTop="@dimen/dimens_1"
+                android:background="@drawable/tabsms_shape_center"
+                android:gravity="center"
+                android:padding="@dimen/dimens_10"
+                android:text="Address"
+                android:textColor="@color/color_tabsms_text" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="@dimen/dimens_1"
+            android:layout_height="match_parent"
+            android:background="@color/blue" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/blue">
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimens_1"
+                android:layout_marginTop="@dimen/dimens_1"
+                android:background="@drawable/tabsms_shape_center"
+                android:gravity="center"
+                android:padding="@dimen/dimens_10"
+                android:text="Rider Late"
+                android:textColor="@color/color_tabsms_text" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/tabsms_shape_right"
+            android:gravity="center"
+            android:padding="@dimen/dimens_10"
+            android:text="Airport"
+            android:textColor="@color/color_tabsms_text" />
+        <!--  -->
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_sms"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_tab"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:background="@color/white"
+        android:visibility="gone"></ListView>
+
+    <GridView
+        android:id="@+id/grid_sms"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_tab"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:background="@color/white"
+        android:horizontalSpacing="@dimen/dimens_32"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/dimens_20"
+        android:visibility="gone"></GridView>
+
+</RelativeLayout>

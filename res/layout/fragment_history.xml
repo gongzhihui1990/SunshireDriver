@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_support_toolbar" />
+
+    <TextView
+        style="@style/subtitle_style1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Summary" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimens_144"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/subcontent_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owe:" />
+
+        <TextView
+            android:id="@+id/tv_owe"
+            style="@style/subcontent_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/subtitle_style1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Trips" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dimens_32"
+        android:layout_weight="1.0"
+        android:divider="@color/grayline_e0e0e0"
+        android:dividerHeight="@dimen/dimens_1"></ListView>
+
+</LinearLayout>

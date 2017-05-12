@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_support_toolbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/subcontent_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From:" />
+
+        <TextView
+            android:id="@+id/tv_from"
+            style="@style/subcontent_style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_96"
+            android:layout_weight="1.0"
+            android:drawablePadding="@dimen/dimens_20"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="right|center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/subcontent_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:" />
+
+        <TextView
+            android:id="@+id/tv_to"
+            style="@style/subcontent_style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_96"
+            android:layout_weight="1.0"
+            android:drawablePadding="@dimen/dimens_20"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="right|center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/subcontent_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            style="@style/subcontent_style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_96"
+            android:layout_weight="1.0"
+            android:drawablePadding="@dimen/dimens_20"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="right|center_vertical"
+            android:text="Perform Search" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_result"
+        style="@style/subcontent_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_96"
+        android:gravity="left|center_vertical" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dimens_32"
+        android:layout_weight="1.0"
+        android:divider="@color/grayline_e0e0e0"
+        android:dividerHeight="@dimen/dimens_1"></ListView>
+
+</LinearLayout>
